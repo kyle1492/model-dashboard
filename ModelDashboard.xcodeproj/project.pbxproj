@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104D634ADA7F3066BF54F1EA /* ModelDashboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2DAE065377097869C0E76 /* ModelDashboardApp.swift */; };
+		129F5CE28EB25A367A770116 /* ServiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A32C1C158BFEDD2D273D /* ServiceListView.swift */; };
+		194D0838ABE2D1E281DABEBF /* CPUGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665553EEFA18A55A27D1BB1D /* CPUGridView.swift */; };
+		1EFE7BD73B838534F1AA5879 /* SegmentedBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22665B443A88CDEF0153952 /* SegmentedBarView.swift */; };
+		235895435B40627EA0FBBC81 /* DiskIOReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567C97972BE2966F87A065E9 /* DiskIOReader.swift */; };
+		24EB034283E324D1DDEB050D /* GPUPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0BD7F63B3ED96F0036D997 /* GPUPanelView.swift */; };
+		250C2C42120F1632F9C8AEF3 /* OllamaTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16C39C1C3F7C406398B1485 /* OllamaTypes.swift */; };
+		2952DB79DED6C9A332E14D80 /* GaugeRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624193F84C8BF9B65C3FD53 /* GaugeRingView.swift */; };
+		3C2C5561B1E12B6AA6B3C593 /* MemoryAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B69AF9DA505B302549AD10E /* MemoryAnalyzer.swift */; };
+		48783744E4B8B494D99C5E27 /* OllamaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08575031DE2736D08C2D0103 /* OllamaClient.swift */; };
+		4B8ECEC4DC093F6E53D65F25 /* HealthChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21567BA495C87ABD5839D902 /* HealthChecker.swift */; };
+		4FCEA7A95B411EF38A17A483 /* ServiceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03A55149483C3292ED9565 /* ServiceTypes.swift */; };
+		5D51CE7E8EB6992D074ACD7D /* SystemTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFC0097E16D502137A01D92 /* SystemTypes.swift */; };
+		66D1984EDBBE1B5C8FE37DC0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74521229322D782F684E26BA /* DashboardView.swift */; };
+		66EDDBD4A3E23F1DCD65ED47 /* ProcessTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070A30B716057641C8F1A33 /* ProcessTypes.swift */; };
+		68B6B814CF3B2B3834DA9DAD /* CPUReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A966516E091590221A672729 /* CPUReader.swift */; };
+		6F92E59108299D83AE7B1F23 /* ProcessScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38B20B69002A822B1AD6204 /* ProcessScanner.swift */; };
+		83518760689DE3AED596FA84 /* IOReportReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0700D29ABEAB9DBA53DB2DC /* IOReportReader.swift */; };
+
+		EFADEDB369E4C6CB03163DB3 /* ThrottleReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D0A4C1A6740F377A8B700B /* ThrottleReader.swift */; };
+		8911037CFA7082E17D5A3C12 /* ModelCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78752A92987488DD39F36F08 /* ModelCardView.swift */; };
+		8EBECDB88C3086F1589720B8 /* SparklineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60306171B6918F75BFF91D7 /* SparklineView.swift */; };
+		99616F62E43DAD013CBC4F81 /* IOPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0065FDA0D94C33DC762663D3 /* IOPanelView.swift */; };
+		AA44960421DBB3A48E0AC8C9 /* SystemMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA3CA9421A1D40AEA18ABC /* SystemMonitor.swift */; };
+		B63BD95562506610F7DC666A /* ProcessClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F482B1DA805026A7DEB5BE1 /* ProcessClassifier.swift */; };
+		C7E44D01734387C35E476CF0 /* NetworkIOReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CC0001A5E3A3118C61595 /* NetworkIOReader.swift */; };
+		D3CBA33AF90AD7EECEAEB665 /* MemoryBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C5B6E1D5A7391B0454EE36 /* MemoryBarView.swift */; };
+		DA968D404708DACE82448169 /* ProcessTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B11783B260AED5603110978 /* ProcessTableView.swift */; };
+		E179C2DC958196707B19CD65 /* TemperatureReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBA4D01DE4A2FE091BDAA7 /* TemperatureReader.swift */; };
+		E32C6E7CF114E1C1100C9A59 /* PortMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD904FB214685BED777A4AC /* PortMapper.swift */; };
+		F2431896E63E7AAA1BA2C120 /* ServiceEnricher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8BA882FE666E04D6374D59 /* ServiceEnricher.swift */; };
+		BB22CC33DD44EE55FF660011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55FF66 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0065FDA0D94C33DC762663D3 /* IOPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOPanelView.swift; sourceTree = "<group>"; };
+		08575031DE2736D08C2D0103 /* OllamaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaClient.swift; sourceTree = "<group>"; };
+		1624193F84C8BF9B65C3FD53 /* GaugeRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeRingView.swift; sourceTree = "<group>"; };
+		1A8BA882FE666E04D6374D59 /* ServiceEnricher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEnricher.swift; sourceTree = "<group>"; };
+		1B11783B260AED5603110978 /* ProcessTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessTableView.swift; sourceTree = "<group>"; };
+		1BF2DAE065377097869C0E76 /* ModelDashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDashboardApp.swift; sourceTree = "<group>"; };
+		1CFC0097E16D502137A01D92 /* SystemTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTypes.swift; sourceTree = "<group>"; };
+		1D8321C436B9C1B92A1C3B99 /* ModelDashboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ModelDashboard.entitlements; sourceTree = "<group>"; };
+		1F482B1DA805026A7DEB5BE1 /* ProcessClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessClassifier.swift; sourceTree = "<group>"; };
+		21567BA495C87ABD5839D902 /* HealthChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthChecker.swift; sourceTree = "<group>"; };
+		39AA3CA9421A1D40AEA18ABC /* SystemMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitor.swift; sourceTree = "<group>"; };
+		46FF3F9B25667CB6ABCB079B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		567C97972BE2966F87A065E9 /* DiskIOReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskIOReader.swift; sourceTree = "<group>"; };
+		665553EEFA18A55A27D1BB1D /* CPUGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUGridView.swift; sourceTree = "<group>"; };
+		6D0BD7F63B3ED96F0036D997 /* GPUPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUPanelView.swift; sourceTree = "<group>"; };
+		74521229322D782F684E26BA /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		78752A92987488DD39F36F08 /* ModelCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCardView.swift; sourceTree = "<group>"; };
+		9070A30B716057641C8F1A33 /* ProcessTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessTypes.swift; sourceTree = "<group>"; };
+		93BBA4D01DE4A2FE091BDAA7 /* TemperatureReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureReader.swift; sourceTree = "<group>"; };
+		9B69AF9DA505B302549AD10E /* MemoryAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryAnalyzer.swift; sourceTree = "<group>"; };
+		9BC7EC288F4495A21EF91B3F /* ModelDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F44A32C1C158BFEDD2D273D /* ServiceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListView.swift; sourceTree = "<group>"; };
+		A0700D29ABEAB9DBA53DB2DC /* IOReportReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOReportReader.swift; sourceTree = "<group>"; };
+		E1D0A4C1A6740F377A8B700B /* ThrottleReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottleReader.swift; sourceTree = "<group>"; };
+		A966516E091590221A672729 /* CPUReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUReader.swift; sourceTree = "<group>"; };
+		AE03A55149483C3292ED9565 /* ServiceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTypes.swift; sourceTree = "<group>"; };
+		AE2CC0001A5E3A3118C61595 /* NetworkIOReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIOReader.swift; sourceTree = "<group>"; };
+		B38B20B69002A822B1AD6204 /* ProcessScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessScanner.swift; sourceTree = "<group>"; };
+		C16C39C1C3F7C406398B1485 /* OllamaTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaTypes.swift; sourceTree = "<group>"; };
+		C22665B443A88CDEF0153952 /* SegmentedBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedBarView.swift; sourceTree = "<group>"; };
+		CBD904FB214685BED777A4AC /* PortMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortMapper.swift; sourceTree = "<group>"; };
+		D60306171B6918F75BFF91D7 /* SparklineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparklineView.swift; sourceTree = "<group>"; };
+		DC95945A7772245418BE62B8 /* ModelDashboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModelDashboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5C5B6E1D5A7391B0454EE36 /* MemoryBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryBarView.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55FF66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		06F1B1551D31507D5727E9D2 /* Metrics */ = {
+			isa = PBXGroup;
+			children = (
+				A966516E091590221A672729 /* CPUReader.swift */,
+				567C97972BE2966F87A065E9 /* DiskIOReader.swift */,
+				A0700D29ABEAB9DBA53DB2DC /* IOReportReader.swift */,
+				E1D0A4C1A6740F377A8B700B /* ThrottleReader.swift */,
+				AE2CC0001A5E3A3118C61595 /* NetworkIOReader.swift */,
+				93BBA4D01DE4A2FE091BDAA7 /* TemperatureReader.swift */,
+			);
+			path = Metrics;
+			sourceTree = "<group>";
+		};
+		08F403A9DE527E4C17848D6C = {
+			isa = PBXGroup;
+			children = (
+				6DA699F89EA699A90492D52D /* ModelDashboard */,
+				8108CD1448406070397277AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		442EDA8110BCF48EBF0DA5D5 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				9B69AF9DA505B302549AD10E /* MemoryAnalyzer.swift */,
+				CBD904FB214685BED777A4AC /* PortMapper.swift */,
+				1F482B1DA805026A7DEB5BE1 /* ProcessClassifier.swift */,
+				B38B20B69002A822B1AD6204 /* ProcessScanner.swift */,
+				1A8BA882FE666E04D6374D59 /* ServiceEnricher.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		4621F89D958A710F43181F95 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				21567BA495C87ABD5839D902 /* HealthChecker.swift */,
+				08575031DE2736D08C2D0103 /* OllamaClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5135310AA2448E5B1F7CA675 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				665553EEFA18A55A27D1BB1D /* CPUGridView.swift */,
+				74521229322D782F684E26BA /* DashboardView.swift */,
+				6D0BD7F63B3ED96F0036D997 /* GPUPanelView.swift */,
+				0065FDA0D94C33DC762663D3 /* IOPanelView.swift */,
+				F5C5B6E1D5A7391B0454EE36 /* MemoryBarView.swift */,
+				78752A92987488DD39F36F08 /* ModelCardView.swift */,
+				1B11783B260AED5603110978 /* ProcessTableView.swift */,
+				9F44A32C1C158BFEDD2D273D /* ServiceListView.swift */,
+				F013063632EDFAB2E95EB12D /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DA699F89EA699A90492D52D /* ModelDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				AA11BB22CC33DD44EE55FF66 /* Assets.xcassets */,
+				46FF3F9B25667CB6ABCB079B /* Info.plist */,
+				DC95945A7772245418BE62B8 /* ModelDashboard-Bridging-Header.h */,
+				1D8321C436B9C1B92A1C3B99 /* ModelDashboard.entitlements */,
+				1BF2DAE065377097869C0E76 /* ModelDashboardApp.swift */,
+				442EDA8110BCF48EBF0DA5D5 /* Discovery */,
+				06F1B1551D31507D5727E9D2 /* Metrics */,
+				CE069828A6DC02CBD3F3F7C7 /* Models */,
+				4621F89D958A710F43181F95 /* Services */,
+				8395646D5C38C131EDD2FCDA /* ViewModels */,
+				5135310AA2448E5B1F7CA675 /* Views */,
+			);
+			path = ModelDashboard;
+			sourceTree = "<group>";
+		};
+		8108CD1448406070397277AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BC7EC288F4495A21EF91B3F /* ModelDashboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8395646D5C38C131EDD2FCDA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				39AA3CA9421A1D40AEA18ABC /* SystemMonitor.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE069828A6DC02CBD3F3F7C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C16C39C1C3F7C406398B1485 /* OllamaTypes.swift */,
+				9070A30B716057641C8F1A33 /* ProcessTypes.swift */,
+				AE03A55149483C3292ED9565 /* ServiceTypes.swift */,
+				1CFC0097E16D502137A01D92 /* SystemTypes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F013063632EDFAB2E95EB12D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1624193F84C8BF9B65C3FD53 /* GaugeRingView.swift */,
+				C22665B443A88CDEF0153952 /* SegmentedBarView.swift */,
+				D60306171B6918F75BFF91D7 /* SparklineView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E6A28D1807C930D6C7A08A3 /* ModelDashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E8EA5C5DEFE06855B6DE839 /* Build configuration list for PBXNativeTarget "ModelDashboard" */;
+			buildPhases = (
+				5CA3048FD2BF99D5913B2801 /* Sources */,
+				CC33DD44EE55FF66001122AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModelDashboard;
+			packageProductDependencies = (
+			);
+			productName = ModelDashboard;
+			productReference = 9BC7EC288F4495A21EF91B3F /* ModelDashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D0CDB9BA33674C78B20EADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 092F7F8895A620B45CB17FA9 /* Build configuration list for PBXProject "ModelDashboard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 08F403A9DE527E4C17848D6C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8108CD1448406070397277AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E6A28D1807C930D6C7A08A3 /* ModelDashboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC33DD44EE55FF66001122AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB22CC33DD44EE55FF660011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CA3048FD2BF99D5913B2801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				194D0838ABE2D1E281DABEBF /* CPUGridView.swift in Sources */,
+				68B6B814CF3B2B3834DA9DAD /* CPUReader.swift in Sources */,
+				66D1984EDBBE1B5C8FE37DC0 /* DashboardView.swift in Sources */,
+				235895435B40627EA0FBBC81 /* DiskIOReader.swift in Sources */,
+				24EB034283E324D1DDEB050D /* GPUPanelView.swift in Sources */,
+				2952DB79DED6C9A332E14D80 /* GaugeRingView.swift in Sources */,
+				4B8ECEC4DC093F6E53D65F25 /* HealthChecker.swift in Sources */,
+				99616F62E43DAD013CBC4F81 /* IOPanelView.swift in Sources */,
+				83518760689DE3AED596FA84 /* IOReportReader.swift in Sources */,
+				EFADEDB369E4C6CB03163DB3 /* ThrottleReader.swift in Sources */,
+				3C2C5561B1E12B6AA6B3C593 /* MemoryAnalyzer.swift in Sources */,
+				D3CBA33AF90AD7EECEAEB665 /* MemoryBarView.swift in Sources */,
+				8911037CFA7082E17D5A3C12 /* ModelCardView.swift in Sources */,
+				104D634ADA7F3066BF54F1EA /* ModelDashboardApp.swift in Sources */,
+				C7E44D01734387C35E476CF0 /* NetworkIOReader.swift in Sources */,
+				48783744E4B8B494D99C5E27 /* OllamaClient.swift in Sources */,
+				250C2C42120F1632F9C8AEF3 /* OllamaTypes.swift in Sources */,
+				E32C6E7CF114E1C1100C9A59 /* PortMapper.swift in Sources */,
+				B63BD95562506610F7DC666A /* ProcessClassifier.swift in Sources */,
+				6F92E59108299D83AE7B1F23 /* ProcessScanner.swift in Sources */,
+				DA968D404708DACE82448169 /* ProcessTableView.swift in Sources */,
+				66EDDBD4A3E23F1DCD65ED47 /* ProcessTypes.swift in Sources */,
+				1EFE7BD73B838534F1AA5879 /* SegmentedBarView.swift in Sources */,
+				F2431896E63E7AAA1BA2C120 /* ServiceEnricher.swift in Sources */,
+				129F5CE28EB25A367A770116 /* ServiceListView.swift in Sources */,
+				4FCEA7A95B411EF38A17A483 /* ServiceTypes.swift in Sources */,
+				8EBECDB88C3086F1589720B8 /* SparklineView.swift in Sources */,
+				AA44960421DBB3A48E0AC8C9 /* SystemMonitor.swift in Sources */,
+				5D51CE7E8EB6992D074ACD7D /* SystemTypes.swift in Sources */,
+				E179C2DC958196707B19CD65 /* TemperatureReader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		36DE055208493DB950AD4BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ModelDashboard/ModelDashboard.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "ModelDashboard/ModelDashboard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		8F48F98AE4D53E6402F132A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ModelDashboard/ModelDashboard.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = ModelDashboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					IOKit,
+					"-lIOReport",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silasdad.ModelDashboard;
+				PRODUCT_NAME = "Model Dashboard";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "ModelDashboard/ModelDashboard-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		AB8A582C5637ED103E84610B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ModelDashboard/ModelDashboard.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "ModelDashboard/ModelDashboard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		D5E4E5B02A3F12F5818F3B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ModelDashboard/ModelDashboard.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = ModelDashboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					IOKit,
+					"-lIOReport",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.silasdad.ModelDashboard;
+				PRODUCT_NAME = "Model Dashboard";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "ModelDashboard/ModelDashboard-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		092F7F8895A620B45CB17FA9 /* Build configuration list for PBXProject "ModelDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36DE055208493DB950AD4BAC /* Debug */,
+				AB8A582C5637ED103E84610B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4E8EA5C5DEFE06855B6DE839 /* Build configuration list for PBXNativeTarget "ModelDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E4E5B02A3F12F5818F3B5F /* Debug */,
+				8F48F98AE4D53E6402F132A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D0CDB9BA33674C78B20EADD /* Project object */;
+}
