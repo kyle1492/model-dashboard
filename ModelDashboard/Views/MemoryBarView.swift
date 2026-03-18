@@ -25,7 +25,7 @@ struct MemoryBarView: View {
                     .init(label: "Apps", value: breakdown.appGB, color: .blue),
                     .init(label: "System", value: breakdown.systemGB, color: .orange),
                     .init(label: "Cache", value: breakdown.cacheGB, color: .gray.opacity(0.5), isStriped: true),
-                    .init(label: "Free", value: breakdown.freeGB, color: .black.opacity(0.3)),
+                    .init(label: "Free", value: breakdown.freeGB, color: .white.opacity(0.08)),
                 ],
                 totalValue: totalGB,
                 height: 24

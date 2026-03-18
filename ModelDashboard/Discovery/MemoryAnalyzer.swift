@@ -38,27 +38,34 @@ struct MemoryAnalyzer: Sendable {
     func breakdown(systemMem: SystemMemoryInfo, processes: [ClassifiedProcess]) -> MemoryBreakdown {
         var modelMem: UInt64 = 0
         var appMem: UInt64 = 0
-        var sysMem: UInt64 = 0
 
         for p in processes {
             switch p.category {
-            case .ollamaRuntime, .mlxLM, .embedding, .tts, .stt, .imageGeneration:
+            case .ollamaRuntime, .mlxLM, .llmRuntime, .lmStudio, .embedding, .tts, .stt, .imageGeneration:
                 modelMem += p.raw.memoryBytes
             case .userApp, .mlAPI:
                 appMem += p.raw.memoryBytes
-            case .system, .ollamaPlatform:
-                sysMem += p.raw.memoryBytes
             case .unknownLarge, .other:
                 appMem += p.raw.memoryBytes
+            case .system, .ollamaPlatform:
+                break // counted in system below
             }
         }
+
+        // Budget from physical total. Process resident_size is part of
+        // wired+active, so subtract models+apps from used memory to get
+        // the remaining "system" slice (kernel wired, compressed, etc.).
+        let cache = systemMem.inactiveBytes
+        let free = systemMem.freeBytes
+        let used = systemMem.totalBytes - cache - free
+        let system = used > (modelMem + appMem) ? used - modelMem - appMem : 0
 
         return MemoryBreakdown(
             modelMemory: modelMem,
             appMemory: appMem,
-            systemMemory: systemMem.wiredBytes,
-            cacheMemory: systemMem.inactiveBytes,
-            freeMemory: systemMem.freeBytes
+            systemMemory: system,
+            cacheMemory: cache,
+            freeMemory: free
         )
     }
 

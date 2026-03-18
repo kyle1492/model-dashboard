@@ -9,8 +9,10 @@ enum ProcessCategory: String, CaseIterable, Sendable {
     case embedding          // Python embedding service (BGE-M3 etc)
     case tts                // Python TTS service
     case stt                // Python STT (Whisper etc)
-    case imageGeneration    // Python diffusers
-    case mlAPI              // Python ML API (FastAPI/Flask/uvicorn)
+    case imageGeneration    // diffusers, ComfyUI, Stable Diffusion, FLUX, etc.
+    case llmRuntime         // llama.cpp, KoboldCPP, vLLM, GPT4All, etc.
+    case lmStudio           // LM Studio model worker
+    case mlAPI              // ML API server (FastAPI/Flask/uvicorn)
     case userApp            // /Applications/*.app
     case unknownLarge       // >1GB unclassified
     case system             // system processes
@@ -25,6 +27,8 @@ enum ProcessCategory: String, CaseIterable, Sendable {
         case .tts: "TTS"
         case .stt: "STT"
         case .imageGeneration: "Image Generation"
+        case .llmRuntime: "LLM Runtime"
+        case .lmStudio: "LM Studio"
         case .mlAPI: "ML API"
         case .userApp: "App"
         case .unknownLarge: "Unknown (Large)"
@@ -35,7 +39,7 @@ enum ProcessCategory: String, CaseIterable, Sendable {
 
     var isModel: Bool {
         switch self {
-        case .ollamaRuntime, .mlxLM, .embedding, .tts, .stt, .imageGeneration:
+        case .ollamaRuntime, .mlxLM, .llmRuntime, .lmStudio, .embedding, .tts, .stt, .imageGeneration:
             return true
         default:
             return false

@@ -89,6 +89,9 @@ struct ModelCardView: View {
         case .ollamaRuntime: .green.opacity(0.3)
         case .embedding: .blue.opacity(0.3)
         case .mlxLM: .purple.opacity(0.3)
+        case .llmRuntime: .cyan.opacity(0.3)
+        case .lmStudio: .indigo.opacity(0.3)
+        case .imageGeneration: .pink.opacity(0.3)
         case .unknownLarge: .red.opacity(0.3)
         default: .white.opacity(0.08)
         }

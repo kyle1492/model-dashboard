@@ -150,7 +150,8 @@ final class SystemMonitor {
 
         // Filter and sort
         processes = scanned.filter { $0.category != .system && $0.category != .other }
-        var models = scanned.filter { $0.category.isModel }
+        let modelMinBytes: UInt64 = 50 * 1_048_576 // 50MB — skip tiny wrappers
+        var models = scanned.filter { $0.category.isModel && $0.raw.memoryBytes >= modelMinBytes }
             .sorted { $0.raw.memoryBytes > $1.raw.memoryBytes }
 
         // Inline enrichment using cached Ollama data
