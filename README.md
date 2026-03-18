@@ -7,7 +7,7 @@ A native macOS monitoring dashboard for local AI model infrastructure. See all y
 ## Features
 
 ### Model Discovery
-- **Automatic process detection** — discovers Ollama, MLX LM, embedding services, TTS/STT, and image generation processes
+- **Automatic process detection** — keyword-driven classifier recognizes 40+ AI frameworks: Ollama, MLX LM, LM Studio, llama.cpp, vLLM, KoboldCPP, ComfyUI, Stable Diffusion, and more
 - **Ollama integration** — shows model names, quantization, VRAM usage, and expiry countdown via the Ollama API
 - **Service health checks** — HTTP health monitoring for detected services with ports
 - **Unknown large process alerts** — flags any process using >1GB memory that isn't classified
@@ -37,7 +37,7 @@ A native macOS monitoring dashboard for local AI model infrastructure. See all y
 
 ```bash
 # Clone
-git clone https://github.com/user/model-dashboard.git
+git clone https://github.com/kyle1492/model-dashboard.git
 cd model-dashboard
 
 # Generate Xcode project (requires XcodeGen)
