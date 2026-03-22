@@ -52,20 +52,31 @@ struct ProcessClassifier: Sendable {
         ("text-generation-launcher", .llmRuntime),
 
         // ── Image generation ──────────────────────────────────────
+        ("zimage",              .imageGeneration),  // Z-Image-Turbo
+        ("qwen-image",          .imageGeneration),  // Qwen-Image-2512 / Edit
+        ("qwen_image",          .imageGeneration),
+        ("mflux",               .imageGeneration),  // mflux MLX native (FLUX/Qwen-Image)
         ("comfyui",             .imageGeneration),
         ("stable-diffusion",    .imageGeneration),
         ("stable_diffusion",    .imageGeneration),
         ("sd_webui",            .imageGeneration),
         ("sd-webui",            .imageGeneration),
+        ("diffusionpipeline",   .imageGeneration),  // HF diffusers pipeline class
         ("diffusers",           .imageGeneration),
-        ("diffuser",            .imageGeneration),
-        ("mflux",               .imageGeneration),
+        ("flux-dev",            .imageGeneration),  // FLUX model variants
+        ("flux-schnell",        .imageGeneration),
+        ("flux.1",              .imageGeneration),
+        ("flux.2",              .imageGeneration),
         ("invokeai",            .imageGeneration),
         ("mochi-diffusion",     .imageGeneration),
         ("draw-things",         .imageGeneration),
-        ("qwen-image",          .imageGeneration),
-        ("qwen_image",          .imageGeneration),
         ("fooocus",             .imageGeneration),
+
+        // ── Video generation ─────────────────────────────────────
+        ("wan2.1",              .imageGeneration),  // Wan2.1 video gen (reuse category)
+        ("wan2_1",              .imageGeneration),
+        ("open-sora",           .imageGeneration),
+        ("animatediff",         .imageGeneration),
 
         // ── Embedding ─────────────────────────────────────────────
         ("sentence_transformers", .embedding),
